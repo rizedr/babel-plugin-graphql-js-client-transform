@@ -1,12 +1,16 @@
 {
-  "name": "babel-plugin-graphql-js-client-transform",
-  "version": "1.1.1",
+  "name": "@rizedr/babel-plugin-graphql-js-client-transform",
+  "version": "0.0.1",
   "description": "Babel plugin for transforming raw GraphQL queries into graphql-js-client query builder syntax",
+  "repository": "rizedr/babel-plugin-graphql-js-client-transform",
   "main": "lib/index.js",
   "license": "MIT",
   "author": "Shopify Inc.",
   "dependencies": {
     "graphql-to-js-client-builder": "0.0.1"
+  },
+  "bin": {
+    "babel-plugin-graphql-js-client-transform": "./lib/index.js"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
@@ -27,12 +31,8 @@
   "keywords": [
     "graphql,babel"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Shopify/babel-plugin-graphql-js-client-transform.git"
-  },
-  "homepage": "https://github.com/Shopify/babel-plugin-graphql-js-client-transform",
+  "homepage": "https://github.com/rizedr/babel-plugin-graphql-js-client-transform",
   "bugs": {
-    "url": "https://github.com/Shopify/babel-plugin-graphql-js-client-transform/issues"
+    "url": "https://github.com/rizedr/babel-plugin-graphql-js-client-transform/issues"
   }
 }
