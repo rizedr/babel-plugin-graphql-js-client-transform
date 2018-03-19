@@ -1,9 +1,10 @@
 {
   "name": "@rizedr/babel-plugin-graphql-js-client-transform",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Babel plugin for transforming raw GraphQL queries into graphql-js-client query builder syntax",
   "repository": "rizedr/babel-plugin-graphql-js-client-transform",
   "main": "lib/index.js",
+  "module": "lib/index.js",
   "license": "MIT",
   "author": "Shopify Inc.",
   "dependencies": {
