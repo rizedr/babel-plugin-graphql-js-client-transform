@@ -1,8 +1,9 @@
 {
   "name": "@rizedr/babel-plugin-graphql-js-client-transform",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Babel plugin for transforming raw GraphQL queries into graphql-js-client query builder syntax",
   "repository": "rizedr/babel-plugin-graphql-js-client-transform",
+  "main": "lib/index.js",
   "license": "MIT",
   "author": "Shopify Inc.",
   "dependencies": {
@@ -24,8 +25,8 @@
   "scripts": {
     "test": "yarn run lint && yarn run mocha",
     "mocha": "mocha --compilers js:babel-register -u tdd $([ -n \"${CI}\" ] && echo --reporter xunit --reporter-options output=$CIRCLE_TEST_REPORTS/junit/mocha.xml) test/",
-    "lint": "eslint --max-warnings 0 -c .eslintrc.json $([ -n \"${CI}\" ] && echo -o $CIRCLE_TEST_REPORTS/junit/eslint.xml -f junit) src/ test/",
-    "postinstall": "babel -d lib/ src/"
+    "prepublish": "babel -d lib/ src/",
+    "lint": "eslint --max-warnings 0 -c .eslintrc.json $([ -n \"${CI}\" ] && echo -o $CIRCLE_TEST_REPORTS/junit/eslint.xml -f junit) src/ test/"
   },
   "keywords": [
     "graphql,babel"
